@@ -44,7 +44,7 @@ In your PSGI runner, you have multiple apps:
 
     builder {
         mount '/app1' => App1->to_app;
-        mount '/app1' => App1->to_app;
+        mount '/app2' => App2->to_app;
     }
 
 In your app, you would like to redirect or link between them:
