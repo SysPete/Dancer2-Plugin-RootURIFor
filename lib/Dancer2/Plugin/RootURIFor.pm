@@ -80,7 +80,7 @@ Returns a URI with the server's root URI as its base.
 You can also pass a hashref to generate URI parameters:
 
     root_uri_for '/hello', { looking_for => 'me' };
-    # Returns something like 'https://yourservice/hello?looking_for=me
+    # Returns something like 'https://yourservice/hello?looking_for=me'
 
 =head1 AUTHOR
 
@@ -104,6 +104,10 @@ Copyright 2015 John Barrett.
 
 This application is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
+
+=head1 ACKNOWLEDGEMENTS
+
+Thanks to Sawyer X for sanity check and feedback.
 
 =head1 SEE ALSO
 
