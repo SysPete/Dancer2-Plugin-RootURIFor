@@ -7,6 +7,7 @@ package Dancer2::Plugin::RootURIFor;
 # ABSTRACT: Mountpoint-agnostic uri builder for Dancer2
 
 use URI::Escape;
+use Dancer2 0.15;
 use Dancer2::Plugin;
 
 register root_uri_for => sub {

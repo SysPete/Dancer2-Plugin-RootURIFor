@@ -27,9 +27,9 @@ use HTTP::Request::Common;
 
 {
     my $app = builder {
-        mount '/app1' => TestApp->to_app;
-        mount '/app2' => TestApp->to_app;
-        mount '/'     => TestApp->to_app;
+        mount '/app1' => TestApp->psgi_app;
+        mount '/app2' => TestApp->psgi_app;
+        mount '/'     => TestApp->psgi_app;
     };
 
     test_psgi $app, sub {
