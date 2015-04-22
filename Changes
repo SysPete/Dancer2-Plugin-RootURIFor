@@ -1,3 +1,7 @@
+0.02 2015-04-22
+
+  - Setting minimum Dancer2 version to 0.15, with psgi_app
+
 0.01 2015-04-19
 
   - Initial release
