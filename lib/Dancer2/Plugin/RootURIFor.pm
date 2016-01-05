@@ -7,12 +7,11 @@ package Dancer2::Plugin::RootURIFor;
 # ABSTRACT: Mountpoint-agnostic uri builder for Dancer2
 
 use URI::Escape;
-use Dancer2 0.15;
-use Dancer2::Plugin;
+use Dancer2::Plugin 0.15;
 
 register root_uri_for => sub {
     my ( $dsl, $part, $params, $dont_escape ) = @_;
-    my $uri = $dsl->request->base;
+    my $uri = $dsl->app->request->base;
 
     $part =~ s{^/*}{/};
     $uri->path("$part");
